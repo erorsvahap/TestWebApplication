@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35506.116 d17.12
+VisualStudioVersion = 17.12.35506.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebApplication", "TestWebApplication.csproj", "{D019F3CF-45D2-4976-A02B-87F0CA896ADA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWeb.Connection", "..\TestWeb.Connection\TestWeb.Connection.csproj", "{C46BC98D-CCA3-4692-AFB1-3526C8056700}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConnectionDb", "..\TestConnectionDb\TestConnectionDb.csproj", "{5151FDAE-528C-4473-B638-55DFD40E8F61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{D019F3CF-45D2-4976-A02B-87F0CA896ADA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D019F3CF-45D2-4976-A02B-87F0CA896ADA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D019F3CF-45D2-4976-A02B-87F0CA896ADA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C46BC98D-CCA3-4692-AFB1-3526C8056700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C46BC98D-CCA3-4692-AFB1-3526C8056700}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C46BC98D-CCA3-4692-AFB1-3526C8056700}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C46BC98D-CCA3-4692-AFB1-3526C8056700}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5151FDAE-528C-4473-B638-55DFD40E8F61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5151FDAE-528C-4473-B638-55DFD40E8F61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5151FDAE-528C-4473-B638-55DFD40E8F61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5151FDAE-528C-4473-B638-55DFD40E8F61}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
