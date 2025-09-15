@@ -10,6 +10,7 @@ using System.Web.DynamicData;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using TestWebApplicationBusiness;
+using TestWebApplicationBusiness.IlModels;
 using TestWebApplicationBusiness.Ulke;
 
 namespace TestWebApplication
@@ -38,15 +39,31 @@ namespace TestWebApplication
             dt = cnn.EXECUTE(cmd); // debung üzerinedn test edıldı
 
             string sqlCount = "SELECT COUNT(*) FROM ULKE";
-            var cmdCount = cnn.CreateCommand(sqlCount, CommandType.Text); 
+            var cmdCount = cnn.CreateCommand(sqlCount, CommandType.Text);
             cnn.ExecuteScalar(cmdCount); // debung üzerinedn test edıldı
 
-            CountryBusiness cb = new CountryBusiness();
-            ulke u1 = new ulke { ulkeadi = "TÜRKİYE" };
-            cb.AddCountry(u1);
-            ulke u2 = new ulke { ulkeid = 12, ulkeadi = "ALMANYA" };
-            cb.UpdateCountry(u2);
-            cb.DeleteCountry(14);
+            //string sqlAlter = @"ALTER TABLE ULKE 
+            //          ADD kolonadı int  DEFAULT 1;
+            //         ihtiyaca göre sekıllendir
+
+
+            //var cmdAlter = cnn.CreateCommand(sql, CommandType.Text);
+            //cnn.EXECUTE_NONQUERY(cmd);
+            //cnn.Commit();  // yeni bir kolon eklmek istersem
+
+            //CountryBusiness cb = new CountryBusiness();
+            //ulke u1 = new ulke { ulkeadi = "TÜRKİYE" };
+            //cb.AddCountry(u1);
+            //ulke u2 = new ulke { ulkeid = 12, ulkeadi = "ALMANYA" };
+            //cb.UpdateCountry(u2);
+            //cb.DeleteCountry(14); 
+
+            IlBusiness ib = new IlBusiness();
+            il i1 = new il { ilad = "MUŞ", ulkeid = 1 };
+            ib.Addil(i1);
+            il i2 = new il { ulkeid = 3, ilad = "VENDİK", ilid = 3 };
+            ib.Addil(i2);
+            ib.DeleteIl(8);
         }
     }
 }
