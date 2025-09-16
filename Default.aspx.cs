@@ -10,6 +10,7 @@ using System.Web.DynamicData;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using TestWebApplicationBusiness;
+using TestWebApplicationBusiness.IlceModels;
 using TestWebApplicationBusiness.IlModels;
 using TestWebApplicationBusiness.Ulke;
 
@@ -61,9 +62,17 @@ namespace TestWebApplication
             IlBusiness ib = new IlBusiness();
             il i1 = new il { ilad = "MUŞ", ulkeid = 1 };
             ib.Addil(i1);
-            il i2 = new il { ulkeid = 3, ilad = "VENDİK", ilid = 3 };
-            ib.Addil(i2);
+            il i2 = new il { ilad = "VENEDİK", ilid = 3 };
+            ib.UpdateIl(i2);
             ib.DeleteIl(8);
+
+            IlceBusiness icb = new IlceBusiness();
+            Ilce ilce1 = new Ilce {IlceAd= "EDREMİT",IlId=1 };
+            icb.AddIlce(ilce1);
+            Ilce ılce2 = new Ilce { IlceAd = "GURPİNAR", IlceId = 2 };
+            icb.UpdateIlce(ılce2);
+            icb.Deleteılce(9);
+            // 5.AYIN 25 İ
         }
     }
 }
